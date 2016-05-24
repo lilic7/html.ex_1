@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ex 1</title>
+</head>
+<body ng-app="ex1" ng-cloak>
+
+    <div layout>
+        <div flex layout="column" layout-align="center center" class="header">
+            <div class="content" layout>
+                <div flex="33" class="logo"><a href="#">
+                    <img src="img/logo.png" alt="logo">ELEGANCE MEDIA</a>
+                </div>
+                <div flex="66" layout layout-align="center center" class="main-menu">
+                    <a href="#" flex>HOME</a>
+                    <a href="#" flex>ABOUT US</a>
+                    <a href="#" flex>SERVICES</a>
+                    <a href="#" flex>PORTOFOLIO</a>
+                    <a href="#" flex>BLOG</a>
+                    <a href="#" flex>CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div layout layout-align="center start" class="slider">
+        <div class="slider-content" layout layout-align="space-between center">
+            <img src="img/slider-arrow-left.png">
+            <div class="element">
+                <img src="img/slider/post-1.jpg">
+                <div class="title">FedEx</div>
+                <div class="description">Lorem ipsum dotlor sit amet</div>
+            </div>
+            <div class="element">
+                <img src="img/slider/post-2.jpg">
+                <div class="title">Digital Art</div>
+                <div class="description">from TheDesignInspiration</div>
+            </div>
+            <div class="element">
+                <img src="img/slider/post-3.jpg">
+                <div class="title">Thismanslife: New Start</div>
+                <div class="description">from Creattica by thismanslife</div>
+            </div>
+            <div class="element">
+                <img src="img/slider/post-4.jpg">
+                <div class="title">Business Graph</div>
+                <div class="description">by GraphicsFuel</div>
+            </div>
+            <img src="img/slider-arrow-right.png">
+        </div>
+    </div>
+    <div layout="column" layout-align="start center" class="titles">
+        <a href="#" class="works" layout layout-align="center center">
+            SEE ALL OUR WORKS
+        </a>
+        <div flex layout layout-align="space-between center" class="content">
+            <div flex>
+                <div class="a-title">Your 1st title Here</div>
+                <div class="a-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie, lectus sed posuere consectetur, dolor ipsum tempus justo, quis ornare magna urna id enim.
+                </div>
+            </div>
+            <div flex>
+                <div class="a-title">Your 2nd title Here</div>
+                <div class="a-content">
+                    Nulla accumsan libero id quam facilisis nec luctus libero sollicitudin. Sed ligula libero, feugiat sed gravida vel, commodo sit amet nibh.
+                </div>
+            </div>
+            <div flex>
+                <div class="a-title">Your 3rd title Here</div>
+                <div class="a-content">
+                    Nullam tempus turpis at lorem posuere sodales. Donec nibh urna, auctor at eleifend eget, tblandit fermentum augue. Etiam eget magna vel ante mattis ultricies vitae ut nunc.
+                </div>
+            </div>
+            <div flex>
+                <div class="a-title">Your 4th title Here</div>
+                <div class="a-content">
+                    Nam ac molestie ante. Pellentesque turpis lacus, vulputate vitae feugiat quis, dictum eget diam. Proin sapien libero, tempus et tempus ac, pulvinar quis nulla.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+    <script src="node_modules/angular-material/angular-material.min.js"></script>
+    <script type="text/javascript">angular.module('ex1', ['ngMaterial']);</script>
+</body>
+</html>

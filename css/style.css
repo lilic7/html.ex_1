@@ -1,0 +1,81 @@
+body {
+  background-color: #f1f1f1;
+  font-size: 15px; }
+
+.header {
+  background-color: #fff600;
+  height: 100px;
+  font-size: 12px; }
+  .header .logo {
+    font-size: 20px;
+    padding-left: 10px; }
+    .header .logo img {
+      vertical-align: -35%;
+      margin-right: 10px; }
+  .header a {
+    text-decoration: none;
+    color: #000; }
+  .header .main-menu {
+    text-align: center; }
+    .header .main-menu a:hover {
+      text-decoration: underline;
+      color: #b72706; }
+
+.slider {
+  background-color: #e6e6e6;
+  height: 500px;
+  padding-top: 21px; }
+  .slider .slider-content {
+    width: 1000px; }
+  .slider .element {
+    background-color: #fff;
+    height: 430px;
+    width: 230px;
+    box-shadow: 0 6px 0 #c6c6c6;
+    color: #50504f; }
+    .slider .element img {
+      height: 368px;
+      width: 230px;
+      overflow: hidden;
+      margin-bottom: 10px; }
+    .slider .element .title {
+      font-weight: bold;
+      padding-left: 10px; }
+    .slider .element .description {
+      font-size: 12px;
+      margin: 0 0 5px 10px; }
+
+.content {
+  width: 960px; }
+
+.works {
+  background-color: #000;
+  height: 54px;
+  width: 360px;
+  color: #fff600;
+  border-radius: 5px;
+  margin-top: -27px;
+  text-decoration: none; }
+
+.titles {
+  font-family: "Lucida Sans";
+  background-color: #6b6b6b;
+  height: 337px; }
+  .titles .title {
+    width: 137.14286px; }
+  .titles .a-title {
+    color: #fff600;
+    margin-bottom: 10px; }
+  .titles .a-content {
+    font-size: 12px;
+    color: #e6e6e6;
+    line-height: 24px;
+    word-spacing: 6px; }
+
+.flex-c {
+  background-color: green;
+  text-align: center; }
+
+.flex-d {
+  background-color: magenta;
+  text-align: center; }
