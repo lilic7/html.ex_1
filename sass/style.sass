@@ -1,26 +1,52 @@
+$page-width: 960px
+
 $header-height: 100px
-$main-color: #fff600
-$main-font-size: 15px
 
-$content-width: 960px
+$color-main: #f1f1f1
+$color-accent: #fff600
+
+$color-links: #b72706
+
 $font-family: "Lucida Sans", Arial, Helvetica, sans-serif
+$font-size: 15px
 
 
-=icon-img
-  vertical-align: -45%
-  margin-right: 10px
+//mixins
 
 
+=font-size($addPx)
+  font-size: $font-size + $addPx
+
+//tags
 body
-  background-color: #f1f1f1
-  font-size: $main-font-size
+  background-color: $color-main
   font-family: $font-family
+  +font-size(0)
+
+a
+  text-decoration: none
+  text-transform: uppercase
+  color: #000
+
+a:hover
+  text-decoration: underline
+
+
+//classes
+.content
+  width: $page-width
+
+
+.icon-img
+  vertical-align: -40%
+  margin-right: 5px
 
 .header
-  background-color: $main-color
+  background-color: $color-accent
   height: $header-height
-  font-size: 12px
+  +font-size(-3px)
 
+  //logo
   .logo
     font-size: 20px
     padding-left: 10px
@@ -28,25 +54,25 @@ body
     img
       +icon-img
 
-  a
-    text-decoration: none
-    color: #000
+    a:hover
+      text-decoration: none
+
 
   .main-menu
     text-align: center
 
     a:hover
-      text-decoration: underline
-      color: #b72706
+      color: $color-links
+      font-weight: bold
 
-  
+//slider
 .slider
   background-color: #e6e6e6
   height: 500px
   padding-top: 21px
 
   .slider-content
-    width: $content-width + 40px
+    width: $page-width + 40px
 
 
   .element
@@ -55,8 +81,6 @@ body
     width: 230px
     box-shadow: 0 6px 0 #c6c6c6
     color: #50504f
-
-
 
     img
       height: 368px
@@ -69,38 +93,31 @@ body
       padding-left: 10px
 
     .description
-      font-size: 12px
+      +font-size(-3px)
       margin: 0 0 5px 10px
 
-.content
-  width: $content-width
-
-.works
+.works-btn
   background-color: #000
   height: 54px
   width: 360px
-  color: $main-color
-  border-radius: 5px
   margin-top: -27px
   text-decoration: none
+  color: $color-accent
+  border-radius: 5px
 
 .titles
   background-color: #6b6b6b
-  height: 337px
-  //font-weight: bold
 
-  .title
-    width: $content-width/7
+  img
+    +icon-img
 
   .a-title
-    color: $main-color
+    color: $color-accent
     margin-bottom: 10px
 
-    img
-      +icon-img
 
   .a-content
-    font-size: $main-font-size - 3px
+    font-size: $font-size - 3px
     color: #e6e6e6
     line-height: 24px
     word-spacing: 6px
@@ -109,11 +126,11 @@ body
 .body-content
   .title
     color: #0f0f10
-    font-size: $main-font-size + 3px
+    font-size: $font-size + 3px
 
   .body-text
     color: #50504f
-    font-size: $main-font-size - 3px
+    font-size: $font-size - 3px
     line-height: 24px
 
     span
@@ -137,12 +154,12 @@ body
   .title
     color: #fff
     height: 24px
-    font-size: $main-font-size
+    font-size: $font-size
     line-height: 24px
 
   a
     text-decoration: none
-    font-size: $main-font-size - 2px
+    font-size: $font-size - 2px
     color: #c0c0c0
 
 
@@ -151,7 +168,7 @@ body
 
   .footer-top
     height: 6px
-    background-color: $main-color
+    background-color: $color-accent
 
   .newsletter
     height: 55px
@@ -167,7 +184,7 @@ body
     border: 0
 
   input[type='submit']
-    background-color: $main-color
+    background-color: $color-accent
     height: 26px
     margin-left: 1px
     padding: 0 5px
@@ -176,7 +193,7 @@ body
     border-bottom-right-radius: 3px
 
   .author
-    color: $main-color
+    color: $color-accent
 
   .menu
     padding: 0
@@ -186,9 +203,6 @@ body
     .item
       padding-left: 0
       min-height: 24px
-
-
-
 
 .flex-c
   background-color: green
